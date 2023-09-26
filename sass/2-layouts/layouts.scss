@@ -1,0 +1,62 @@
+@use '../1-base/base.scss';
+@use '../1-base/variables';
+@use '../1-base/base-mixins';
+
+
+
+.container {
+    background-color: variables.$secondary-color;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 25px;
+    width: 95%;
+    max-width: 450px;
+
+    &-input {
+        @include base-mixins.input-btn;
+        font-size: 20px;
+        border-radius: 20px;
+        color: variables.$primary-color;
+        width: calc(100% - 60px);
+    }
+
+    &-btn {
+        @include base-mixins.input-btn;
+        border-radius: 50px;
+        cursor: pointer;
+        float: right;
+    }
+
+    &-img {
+        width: 30px;
+    }
+}
+.container-medio{
+    margin-top: 30px;
+}
+.cidade {
+    color: variables.$primary-color;
+    font-size: 2rem;
+    font-weight: 300px;
+}
+.temp {
+    color: variables.$primary-color;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+.container-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.text-previsao {
+    color: variables.$primary-color;
+    margin-left: 20px;
+}
+.umidade {
+    color: variables.$primary-color;
+    margin: 14px;
+
+
+}

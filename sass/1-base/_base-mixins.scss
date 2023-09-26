@@ -1,0 +1,15 @@
+@use 'variables';
+
+
+@mixin center-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin input-btn {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: variables.$bg-color;
+}
