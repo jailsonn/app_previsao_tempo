@@ -53,6 +53,7 @@
 .text-previsao {
     color: variables.$primary-color;
     margin-left: 20px;
+    text-transform: capitalize;
 }
 .umidade {
     color: variables.$primary-color;
